@@ -1,0 +1,60 @@
+.background-image {
+    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2024/03/floresta-mais-velha-do-mundo-1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.battle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.enemy {
+    width: 300px; /* Comprimento aumentado para 300 pixels */
+    height: 200px; /* Altura mantida em 200 pixels */
+    background-color: darkgray; /* Cor de fundo do quadrado (cinza escuro) */
+    border: 3px solid gray; /* Bordas de 3 pixels (cinza) */
+    border-radius: 5px; /* Raio de borda de 5 pixels */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    line-height: 200px; /* Centraliza o texto verticalmente */
+    color: lightcoral; /* Cor do texto (vermelho claro) */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+/* Estilos para o contêiner do inimigo e a barra de HP */
+.enemy-container {
+    width: 300px; /* Largura do contêiner do inimigo */
+    height: 200px; /* Altura do contêiner do inimigo */
+    background-color: darkgray; /* Cor de fundo do contêiner do inimigo */
+    border: 2px solid gray; /* Adiciona uma borda ao contêiner do inimigo */
+    border-radius: 10px; /* Arredonda as bordas do contêiner do inimigo */
+    display: flex; /* Define o layout do contêiner como flexível */
+    flex-direction: column; /* Empilha os elementos filhos verticalmente */
+    align-items: center; /* Alinha os elementos filhos horizontalmente */
+    justify-content: center; /* Alinha os elementos filhos verticalmente */
+    margin-top: 50px; /* Espaçamento superior */
+}
+
+.enemy-hp-bar {
+    width: 80%; /* Largura da barra de HP */
+    height: 20px; /* Altura da barra de HP */
+    background-color: #333; /* Cor de fundo da barra de HP */
+    border: 1px solid black; /* Adiciona uma borda à barra de HP */
+    border-radius: 10px; /* Arredonda as bordas da barra de HP */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.enemy-hp {
+    width: 100%; /* A barra de HP se ajusta à largura da barra de HP */
+    height: 100%; /* A barra de HP se ajusta à altura da barra de HP */
+    background-color: #ff0000; /* Cor da barra de HP (vermelho) */
+}
